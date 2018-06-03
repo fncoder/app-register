@@ -1,0 +1,27 @@
+.register{
+margin: 0 auto;
+max-width: 350px;
+width:100%;
+background: #ffffff;
+border-top: 5px solid #F1F1F1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+animation: animate-down 1.2s ease;
+}
+
+.wrapper--register{
+  .btn:nth-child(1n+2){
+  margin-top: 14px;
+  }
+}
+
+.form-register{
+display: flex;
+flex-direction: column;
+font-family: 'Raleway', sans-serif;
+font-size: 24px;
+font-weight: 700;
+color: #878787;
+}
