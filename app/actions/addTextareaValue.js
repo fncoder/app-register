@@ -1,5 +1,7 @@
+import { ADD_TEXTAREA_VALUE } from 'constants/actionTypes.js';
+
 const addTextareaValue = value => ({
-  type: 'ADD_TEXTAREA_VALUE',
+  type: ADD_TEXTAREA_VALUE,
   payload: value,
 });
 

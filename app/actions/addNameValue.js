@@ -1,5 +1,7 @@
+import { ADD_NAME_VALUE } from 'constants/actionTypes.js';
+
 const addNameValue = value => ({
-  type: 'ADD_NAME_VALUE',
+  type: ADD_NAME_VALUE,
   payload: value,
 });
 

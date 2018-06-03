@@ -1,10 +1,12 @@
+import { ADD_PASSWORD_VALUE } from 'constants/actionTypes.js';
+
 const addPasswordValue = (state, action) => {
   if (state === undefined) {
     return '';
   }
 
   switch (action.type) {
-    case 'ADD_PASSWORD_VALUE':
+    case ADD_PASSWORD_VALUE:
       return action.payload;
     default:
       return state;
