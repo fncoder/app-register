@@ -11,13 +11,18 @@ padding: 30px;
 animation: animate-post 1.2s ease;
 }
 
+.validate-message{
+font-size: 15px;
+padding-top: 30px;
+}
+
 .label-message{
 display: flex;
 flex-direction: column;
 width:100%;
 color: #878787;
 font-size: 15px;
-margin-top: 30px;
+margin-top: 8px;
 }
 
 .comment-message{
