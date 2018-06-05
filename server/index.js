@@ -5,15 +5,13 @@ const bodyParser = require('body-parser');
 const register = require('./routes/register.js');
 const login = require('./routes/login.js')
 const post = require('./routes/post.js');
-const staticFiles = __dirname + './../build';
+const assets = __dirname + './../build';
 
-app.use(express.static(staticFiles));
-app.use(function(req, res, next){
-  res.set('Accept-Encoding', 'gzip');
-  next();
-});
-app.use(compression());
+app.use(compression({
+  filter: function () { return true; }
+}));
 app.use(bodyParser());
+app.use(express.static(assets));
 app.use('/register', register.router);
 app.use('/login', login);
 app.use('/post', post.router);
