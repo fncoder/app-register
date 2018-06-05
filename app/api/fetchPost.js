@@ -21,12 +21,12 @@ const fetchClickPost = obj => (dispatch) => {
     }),
   }).then(res => res.json()).then((res) => {
     if (res.status === 'post') {
+      dispatch(changeInputStatus(false));
       dispatch(fetchPostsSuccess(res));
       dispatch(addTextareaValue(''));
-      dispatch(changeInputStatus(false));
     } else {
-      dispatch(fetchCommentSuccess(res));
       dispatch(changeInputStatus(true));
+      dispatch(fetchCommentSuccess(res));
     }
   });
 };
