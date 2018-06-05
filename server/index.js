@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const compression = require('compression');
 const bodyParser = require('body-parser');
 const register = require('./routes/register.js');
 const login = require('./routes/login.js')
