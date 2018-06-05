@@ -7,9 +7,7 @@ const login = require('./routes/login.js')
 const post = require('./routes/post.js');
 const assets = __dirname + './../build';
 
-app.use(compression({
-  filter: function () { return true; }
-}));
+app.use(compression());
 app.use(bodyParser());
 app.use(express.static(assets));
 app.use('/register', register.router);
