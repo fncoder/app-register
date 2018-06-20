@@ -1,5 +1,5 @@
-# App Register
+# Register system
 
-> Simple app in React, that allows you to create users and write posts.
+> Stack: React, Redux and Express
 
 [See Online](https://register-system.herokuapp.com/)
