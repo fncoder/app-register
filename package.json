@@ -1,5 +1,5 @@
 {
-  "name": "app-register",
+  "name": "register-system",
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
